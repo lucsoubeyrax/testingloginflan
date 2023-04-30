@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<title>Kayıt Ol</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/style.css">
+</head> 
+<body>
+	<form action="../PHP/register.php" method="POST" enctype="multipart/form-data">
+		<h2>Kayıt Ol</h2>
+		<div class="input-group">
+			<label>İsim</label>
+			<input type="text" name="name" required>
+		</div>
+		<div class="input-group">
+			<label>E-posta</label>
+			<input type="email" name="email" required>
+		</div>
+		<div class="input-group">
+            <label>Şifre</label>
+            <input type="password" name="password" required>
+          </div>
+          <div class="input-group">
+            <label>Şifreyi Tekrar Girin</label>
+            <input type="password" name="password_confirm" required>
+          </div>          
+		<div class="input-group">
+			<label>Profil Resmi</label>
+			<input type="file" name="image">
+		</div>
+		<div class="input-group">
+			<button type="submit" name="register" class="btn">Kayıt Ol</button>
+		</div>
+	</form>
+</body>
+</html>
